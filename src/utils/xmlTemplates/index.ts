@@ -1,0 +1,1 @@
+export { CARD_TRANSACTION_TEMPLATE } from './cardTransactionTemplate';
