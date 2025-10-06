@@ -7,4 +7,4 @@ export const fillTemplate = (template: string, values: Record<string, any>): str
   });
 
   return result;
-}
+};
