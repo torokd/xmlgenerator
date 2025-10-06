@@ -1,1 +1,2 @@
-export { generateCardTransactionXml } from './cardTransactionGenerator'
+export {generateCardTransactionXml} from './cardTransactionGenerator';
+export {generateDomesticTransactionXml} from './domesticTransactionGenerator';
