@@ -1,15 +1,16 @@
-import { CARD_TRANSACTION_TEMPLATE } from '../xmlTemplates/index'
+import { DOMESTIC_TRANSACTION_TEMPLATE } from '../xmlTemplates/index'
 import { faker } from '@faker-js/faker'
 import { fillTemplate } from '../fillTemplate'
 
-export const generateDomesticTransactionXml = (sourceAcc: string, targetAcc: string): string => {
+export const generateDomesticTransactionXml = (userId: string, targetAcc: string, currency: string): string => {
   const values = {
     transactionId: faker.string.uuid(),
-    currency: "HUF",
+    currency,
     amount: faker.number.int({ min: 1500, max: 25000 }),
     timestamp: faker.date.recent().toISOString(),
-    sourceAcc,
+    sourceAcc: faker.finance.accountNumber(8),
+    userId,
     targetAcc
   }
-  return fillTemplate(CARD_TRANSACTION_TEMPLATE, values);
+  return fillTemplate(DOMESTIC_TRANSACTION_TEMPLATE, values);
 }

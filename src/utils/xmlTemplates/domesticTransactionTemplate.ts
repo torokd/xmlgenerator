@@ -1,5 +1,5 @@
 export const DOMESTIC_TRANSACTION_TEMPLATE = `
-  <CardTransaction>
+  <DomesticTransaction>
     <TransactionId>{{transactionId}}</TransactionId>
     <Currency>{{currency}}</Currency>
     <Amount>{{amount}}</Amount>
@@ -7,5 +7,5 @@ export const DOMESTIC_TRANSACTION_TEMPLATE = `
     <UserId>{{userId}}</UserId>
     <SourceAcc>{{sourceAcc}}</SourceAcc>
     <TargetAcc>{{targetAcc}}</TargetAcc> 
-  </CardTransaction>
+  </DomesticTransaction>
 `
