@@ -4,7 +4,7 @@
     <h1>XML Generator Beta</h1>
 
     <section class="form">
-      <!-- Környezet -->
+      <!-- Environment -->
       <EnvironmentSelector v-model="environment" />
 
       <!-- User ID -->
